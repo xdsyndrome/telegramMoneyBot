@@ -44,11 +44,6 @@ function getSplit() {
   Logger.log("deleteExpense".slice(0, 12));
 }
 
-function testGetLastRows() {
-  var ssId = "";
-  var claimsSheet = SpreadsheetApp.openById(ssId).getSheetByName("Claims");
-  getLastRows(191410934, claimsSheet);
-}
 
 /** 
  * Function for getting returning the latest 5 rows, less otherwise
@@ -134,11 +129,6 @@ function userBored(id, ssId) {
   
 }
 
-function testSendHelpMessage() {
-  var ssId = "";
-  var logsSheet = SpreadsheetApp.openById(ssId).getSheetByName("Logs");
-  sendHelpMessage(191410934, logsSheet);
-}
 
 function doPost(e) {
   // Logger.log(e)
